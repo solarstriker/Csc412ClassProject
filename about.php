@@ -1,0 +1,3 @@
+  <h3 class="text-center">About Page</h3>
+  <p> Hi, my name is Adi and I am 24 years old, I am currently studying computer science at sfsu. My hobbies are playing guitar, video games, travelling and badminton. I come from Indonesia, an archipelago thousands of miles away from the USA, it is a beautiful south east asian country with 200 million inhabitants. I love sharing about my culture, and meeting new friends from other cultures. It feels , whenever I meet new friends from other culture, that they bring their country and culture to me, so I do not have to necessarily travel there. The world is a beautiful place.</p>
+  <p> This webpage is made as a presentation page for CSC 412 class in SFSU</p>

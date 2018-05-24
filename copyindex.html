@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>
+            Adiputra Liutama's Homepage
+        </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="banner">
+            <h1>Adiputra Liutama's Homepage</h1>
+        </div>
+        
+        <div id="container">
+            <div id="container2">
+                <div id="navigation">
+                    <ul>
+                        <li><a id="nav1" href="about.html">About This Site</a></li>
+                        <li><a id="nav2" href="current.html">Current Page</a></li>
+                        <li><a id="nav3" href="http://css.maxdesign.com.au/selectutorial/tutorial_intro.htm">Tutorial for this CSS</a></li>
+                    </ul>
+                </div>
+                <div id="more">
+                    <h3>Find out more</h3>
+                    <p>Lorem ipsum... </p>
+                    <br>
+                    <button id="button" type="button"> change nav color</button>
+                    <br>
+                    <button id="button2" type ="button">Toggle Footer</button>
+                    
+                    
+                </div>
+                <div id="content">
+                    <div id="banner2"></div>
+                    <h2>Welcome to My CSC 412 Website!</h2>
+                    <p>This is where we practice our websiting skillz and show it off as a "Business Card" site. I hope u like my website</p>
+                    <br>
+                    <br>
+                    <h2>Visitor's Form</h2>
+                    <br>
+                    <form action="welcome.php" method="post">
+                        First Name: <input type="text" name="firstname"><br>
+                        Last Name : <input type="text" name="lastname"><br>
+                        E-mail    : <input type="text" name="email"><br>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div id="cleardiv"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href="#">Footer item 1</a></li>
+                <li><a href="#">Footer item 2</a></li>
+                <li><a href="#">Footer item 3</a></li>
+                <li><a href="#">Copyright &copy; sitename</a></li>
+            </ul>
+        </div>
+        
+        
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var navi = 0;
+$(document).ready(function(){
+    $("button").click(function(){
+        if(navi <1){
+            $("#nav1").css("background-image", "url(nav_base3.jpg)");
+            $("#nav2").css("background-image", "url(nav_base3.jpg)");
+            $("#nav3").css("background-image", "url(nav_base3.jpg)");
+            navi += 1;
+        }
+        else{
+            $("#nav1").css("background-image", "url(nav_base.jpg)");
+            $("#nav2").css("background-image", "url(nav_base.jpg)");
+            $("#nav3").css("background-image", "url(nav_base.jpg)");
+            navi -= 1;
+        }
+       
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#button2").click(function(){
+        $("#footer").animate({
+            height: 'toggle'
+        });
+    });
+});
+</script> 
+    </body> 
+</html>
+
